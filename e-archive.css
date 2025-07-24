@@ -1,0 +1,47 @@
+.dynapuff-heading {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 400;
+}
+.outfit-text {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fsize-12 {
+    font-size: 12px;
+}
+.fsize-18 {
+    font-size: 18px;
+}
+.fsize-24 {
+    font-size: 24px;
+}
+.fsize-28 {
+    font-size: 28px;
+}
+
+.fbold {
+    font-weight: 700;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+.grid-item {
+    padding: 1rem;
+}
+
+.border-round16 {
+    border-radius: 16px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
