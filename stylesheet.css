@@ -1,0 +1,76 @@
+body {
+    color: white;
+}
+
+.text-font-dynapuff {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 400;
+}
+.text-font-outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-size-12 {
+    font-size: 12px;
+}
+.text-size-18 {
+    font-size: 18px;
+}
+.text-size-24 {
+    font-size: 24px;
+}
+.text-size-28 {
+    font-size: 28px;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+.grid-item {
+    padding: 1rem;
+}
+
+.container-fix {
+    position: fixed;
+}
+.item-z0 {
+    z-index: 0;
+}
+.item-z1 {
+    z-index: 1;
+}
+.item-z2 {
+    z-index: 2;
+}
+.container1-bg {
+    background-color: #001e970c;
+}
+.container2-bg {
+    background-color: #000a31ff;
+}
+
+.round-8 {
+    border-radius: 8px;
+    border-width: 1px;
+}
+.round-16 {
+    border-radius: 16px;
+    border-width: 1px;
+}
+
+.placeholder {
+    visibility: hidden;
+}
