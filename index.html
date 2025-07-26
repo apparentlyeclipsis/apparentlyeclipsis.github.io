@@ -10,30 +10,37 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wdth,wght@75..100,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
         
-        <link href="stylesheet.css" rel="stylesheet">
+        <link href="e-archive.css" rel="stylesheet">
+        <script src="e-archive.js"></script>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Eclipsis">
+        <meta name="description" content="Eclipsis' WIP Portfolio Website.">
+        <meta name="title" content="The Eclipsis Archives">
     </head>
 
     <body style="background-image: url('assets/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-        <div>
+        <div> <!-- header -->
             <h1 class="text-font-dynapuff" style="margin-left: 0.5rem; margin-right: 0.5rem; padding-left: 1rem; padding-right: 1rem; padding-top: 0.5rem; border-bottom: solid white 3px">
                 The Eclipsis Archives
             </h1>
         </div>
 
-        <div class="text-font-outfit grid-container">
-            <div class="grid-item round-16 container1-bg" style="height: max-content;">
-                <div class="text-bold grid-item container2-bg round-8" style="margin-bottom: 0.5rem;">
+        <div class="text-font-outfit grid-container"> <!-- primary grid -->
+            <div class="grid-item round-16 container1-bg" style="height: max-content;"> <!-- navigation -->
+                <button onclick="navigate(1)" id="button_home" class="text-font-outfit text-bold grid-item button-bg round-8" style="margin-bottom: 0.5rem; width: 100%;">
                     Home
-                </div>
-                <div class="grid-item container2-bg round-8" style="margin-bottom: 0.5rem;">
-                    About Me
-                </div>
-                <div class="grid-item container2-bg round-8" style="margin-bottom: 0.5rem;">
+                </button>
+                <button onclick="navigate(2)" id="button_about" class="text-font-outfit grid-item button-bg round-8" style="margin-bottom: 0.5rem; width: 100%;">
+                    About
+                </button>
+                <button onclick="navigate(3)" id="button_projects" class="text-font-outfit grid-item button-bg round-8" style="margin-bottom: 0.5rem; width: 100%;">
                     Projects
-                </div>
-                <div class="grid-item container2-bg round-8" style="margin-bottom: 0.5rem;">
+                </button>
+                <button onclick="navigate(4)" id="button_socials" class="text-font-outfit grid-item button-bg round-8" style="margin-bottom: 0.5rem; width: 100%;">
                     Socials
-                </div>
+                </button>
+
                 <div class="placeholder" style="padding: 1rem; margin-bottom: 0.5rem;">
                     placeholder
                 </div>
@@ -47,13 +54,27 @@
                     placeholder
                 </div>
             </div>
-            <div class="grid-item round-16 container1-bg">
-                Content
+            <div class="grid-item round-16 container1-bg"> <!-- content -->
+                <div id="container_home"> <!-- home -->
+                    Home
+                </div>
+
+                <div id="container_about" class="hidden"> <!-- about -->
+                    About
+                </div>
+
+                <div id="container_projects" class="hidden"> <!-- projects -->
+                    Projects
+                </div>
+
+                <div id="container_socials" class="hidden"> <!-- socials -->
+                    Socials
+                </div>
             </div>
         </div>
 
         <div class="text-font-outfit round16" style="margin-left: 2rem; margin-right: 2rem; padding: 1rem;">
-            Footer
+            this is a very cool footer
         </div>
     </body>
 </html>
