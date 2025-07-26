@@ -1,5 +1,14 @@
 body {
     color: white;
+    font-size: 14px;
+}
+button {
+    color: white;
+    border: 0px;
+    text-align: left;
+}
+h1 {
+    font-size: 32px;
 }
 
 .text-font-dynapuff {
@@ -58,8 +67,13 @@ body {
 .container1-bg {
     background-color: #001e970c;
 }
-.container2-bg {
+.button-bg {
     background-color: #000a31ff;
+    border: 2px solid #000a31ff;
+}
+.button-bg:hover {
+    background-color: #293a7cff;
+    border: 2px solid white;
 }
 
 .round-8 {
@@ -73,4 +87,7 @@ body {
 
 .placeholder {
     visibility: hidden;
+}
+.hidden {
+    display: none;
 }
