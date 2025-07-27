@@ -1,3 +1,6 @@
+// javascript
+// self explanitory i think
+
 function navigate(page) {
     var button_home = document.getElementById("button_home");
     var button_about = document.getElementById("button_about");
