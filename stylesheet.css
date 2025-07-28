@@ -1,10 +1,8 @@
 body {
     color: white;
-    font-size: 14px;
 }
 button {
     color: white;
-    border: 0px;
     text-align: left;
 }
 h1 {
@@ -25,6 +23,9 @@ h1 {
     font-style: normal;
 }
 
+.text-size-10 {
+    font-size: 10px;
+}
 .text-size-12 {
     font-size: 12px;
 }
@@ -42,47 +43,54 @@ h1 {
     font-weight: 700;
 }
 
-.grid-container {
+.text-white {
+    color: white;
+}
+.text-grey {
+    color: grey;
+}
+
+.grid-1x6 {
     display: grid;
     grid-template-columns: 1fr 6fr;
     gap: 1rem;
     padding: 1rem;
 }
-.grid-item {
+.grid-1x4x2 {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    gap: 1rem;
     padding: 1rem;
+}
+
+.grid-item-1p {
+    padding: 1rem;
+}
+.grid-item-2p {
+    padding: 0.5rem;
 }
 
 .container-fix {
     position: fixed;
 }
-.item-z0 {
-    z-index: 0;
-}
-.item-z1 {
-    z-index: 1;
-}
-.item-z2 {
-    z-index: 2;
-}
 .container1-bg {
     background-color: #001e970c;
 }
+
 .button-bg {
     background-color: #000a31ff;
-    border: 2px solid #000a31ff;
+    border: 3px solid #000a31ff;
 }
 .button-bg:hover {
     background-color: #293a7cff;
-    border: 2px solid white;
+    border-color: white;
 }
 
 .round-8 {
     border-radius: 8px;
-    border-width: 1px;
 }
 .round-16 {
     border-radius: 16px;
-    border-width: 1px;
 }
 
 .placeholder {
