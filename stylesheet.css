@@ -1,5 +1,6 @@
 body {
     color: white;
+    font-size: 14px;
 }
 button {
     color: white;
@@ -8,7 +9,26 @@ button {
 h1 {
     font-size: 32px;
 }
+h3 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+select {
+    background: none;
+    color: white;
+    padding: 0.5rem;
+    border-width: 0px;
+}
+option {
+    color: black;
+}
 
+.text-font-outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 .text-font-dynapuff {
     font-family: "DynaPuff", system-ui;
     font-optical-sizing: auto;
@@ -16,11 +36,11 @@ h1 {
     font-style: normal;
     font-variation-settings: "wdth" 400;
 }
-.text-font-outfit {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
+.text-font-calsans {
+    font-family: "Cal Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
+    /* cannot be bolded */
 }
 
 .text-size-10 {
@@ -50,6 +70,11 @@ h1 {
     color: grey;
 }
 
+.grid-1x1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
 .grid-1x6 {
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -74,16 +99,28 @@ h1 {
     position: fixed;
 }
 .container1-bg {
+/*
+    OLD
     background-color: #001e970c;
+*/
+    background-color: #000f4a66;
 }
 
 .button-bg {
+/* OLD 
     background-color: #000a31ff;
     border: 3px solid #000a31ff;
+*/
+    background-color: #121e50ff;
+    border: 3px solid #121e50ff;
 }
 .button-bg:hover {
     background-color: #293a7cff;
     border-color: white;
+}
+
+.underline {
+    border-bottom: 2px solid white;
 }
 
 .round-8 {
