@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 
 <html>
-  <!-- version 6 // 7/27/25 -->
   <head>
+        <!-- version 7 // 7/30/25 -->
         <title>
             Eclipsis Archive
         </title>
 
+        <!-- font imports -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wdth,wght@75..100,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DynaPuff:wght@400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
         
+        <!-- css & js imports -->
         <link href="stylesheet.css" rel="stylesheet">
         <script src="handler.js"></script>
 
+        <!-- metadata -->
         <meta charset="UTF-8">
         <meta name="author" content="Eclipsis">
         <meta name="description" content="Eclipsis' WIP Portfolio Website.">
         <meta name="title" content="The Eclipsis Archives">
     </head>
 
-    <body style="background-image: url('assets/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <body style="background-image: url('assets/background-astral.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 100%;">
         <div> <!-- header -->
-            <h1 class="text-font-dynapuff text-size-32" style="margin-left: 0.5rem; margin-right: 0.5rem; padding-left: 1rem; padding-right: 1rem; padding-top: 0.5rem; border-bottom: solid white 3px">
+            <h1 class="text-font-calsans text-size-32" style="margin-left: 0.5rem; margin-right: 0.5rem; padding-left: 1rem; padding-right: 1rem; padding-top: 0.5rem; border-bottom: solid white 3px">
                 The Eclipsis Archives
             </h1>
         </div>
@@ -41,26 +44,34 @@
                 <button onclick="navigate(4)" id="button_socials" class="text-font-outfit grid-item-1p button-bg round-8" style="margin-bottom: 0.5rem; width: 100%;">
                     Socials
                 </button>
+                <!-- disabled secret button for now -->
+                <button onclick="navigate(5)" id="button_credits" class="hidden text-font-outfit grid-item-1p button-bg round-8" style="margin-bottom: 0.5rem; width: 100%;">
+                    Credits
+                </button>
 
                 <div class="placeholder" style="padding: 1rem; margin-bottom: 0.5rem;">placeholder</div>
                 <div class="placeholder" style="padding: 1rem; margin-bottom: 0.5rem;">placeholder</div>
                 <div class="placeholder" style="padding: 1rem; margin-bottom: 0.5rem;">placeholder</div>
-                <div class="placeholder" style="padding: 1rem;">placeholder </div>
+
+                <button onclick="navigate(8)" id="button_options" class="text-font-outfit grid-item-1p button-bg round-8" style="width: 100%;">
+                    Options
+                </button>
             </div>
-            <div class="grid-item-1p round-16 container1-bg"> <!-- content -->
+            <div class="grid-item-1p round-16 container1-bg"> <!-- content , secondary grid -->
                 <div id="container_home"> <!-- home -->
                     Home
                 </div>
 
                 <div id="container_about" class="hidden"> <!-- about -->
-                    <div class="text-font-dynapuff text-size-24" style="border-bottom: 2px solid white; width: 70%;">About</div>
+                    <h3 class="text-font-calsans text-size-24" style="border-bottom: 2px solid white; width: 70%;">About</h3>
                     <div class="grid-1x4x2">
                         <div class="grid-item-2p">
                             <img src="https://avatars.githubusercontent.com/u/191539596?v=4" class="round-16" style="width: 100%;">
                         </div>
-                        <div class="grid-item-1p">
+                        <div class="grid-item-2p">
                             <p>Hey! I'm Eclipsis!</p>
                             <p>I'm a highschooler going into senior (final) year (at time of writing) with an interest, and pursuit in Computer Science.</p>
+                            <p>I design my interfaces and code around the concept of modularity. I want to change something? A friend thinks one option might look better than the other? Why not let the user decide. You can actually see a couple examples of this in the site's options menu, with the fonts, and background styles.</p>
                         </div>
                         <div class="grid-item-1p text-grey text-size-10">
                             Profile picture is by <a href="https://x.com/okiba__ra" class="text-white">@okiba__ra</a>
@@ -77,10 +88,41 @@
                 <div id="container_socials" class="hidden"> <!-- socials -->
                     Socials
                 </div>
+
+                <div id="container_credits" class="hidden"> <!-- credits -->
+                    <h3 class="text-font-calsans text-size-24" style="border-bottom: 2px solid white; width: 70%;">Credits</h3>
+                    <div class="grid-1x4x2">
+                        <div class="grid-item-2p">
+                            <img src="https://rebytre.github.io/Icon.jpg" class="round-16" style="width: 100%;">
+                        </div>
+                        <div class="grid-item-1p">
+                            <p class="text-font-calsans text-size-18" style="border-bottom: 2px solid white; width: 60%;">Rebytre</p>
+                            <p>The friend who made all this happen. Both the portfolio itself, and the finalized style behind it.</p>
+                        </div>
+                        <div class="grid-item-1p text-grey text-size-10" style="margin-top: 2.5rem;">
+                            Rebytre also has a similar portfolio, by the way. You can find it <a href="https://rebytre.github.io/" class="text-white">here</a>.
+                        </div>
+                    </div>
+                </div>
+
+                <div id="container_options" class="hidden"> <!-- options -->
+                    <h3 class="text-font-calsans text-size-24" style="border-bottom: 2px solid white; width: 70%;">Options</h3>
+                    <div class="grid-1x6">
+                        <span style="padding: 0.5rem;">Header Font Style</span> <select id="header_font_selector" onchange="changeFont('h')" class="round-8 text-font-calsans text-grey underline" style="width: 30%;">
+                            <option class="text-font-calsans">Cal Sans</option>
+                            <option class="text-font-dynapuff">DynaPuff</option> 
+                        </select>
+
+                        <span class="hidden" style="padding: 0.5rem;">Background Style</span> <select class="hidden" id="background_image_selector" onchange="changeBackground()" class="round-8 text-font-outfit text-grey underline" style="width: 30%;">
+                            <option class="text-font-outfit">Astral</option>
+                            <option class="text-font-outfit">Forest</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="text-font-outfit round16" style="margin-left: 2rem; margin-right: 2rem; padding: 1rem;">
+        <div class="text-font-outfit" style="margin-left: 2rem; margin-right: 2rem; padding: 1rem;">
             this is a very cool footer
         </div>
     </body>
