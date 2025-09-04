@@ -13,6 +13,9 @@ h3 {
     margin-top: 0rem;
     margin-bottom: 0rem;
 }
+h4 {
+	 margin-bottom: 0rem;
+}
 select {
     background: none;
     color: white;
@@ -21,6 +24,13 @@ select {
 }
 option {
     color: black;
+}
+li {
+	list-style-type:none;
+}
+ul {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
 }
 
 .text-font-outfit {
@@ -70,10 +80,24 @@ option {
     color: grey;
 }
 
+.text-centre { 
+	 /*
+		 only works on divs
+	 */
+	 align: center;
+	 width: 100%;
+}
+
 .grid-1x1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
+}
+.grid-1xr-6 {
+	 display: grid;
+	 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	 grid-template-rows: 275px;
+	 padding: 1rem;
 }
 .grid-1x6 {
     display: grid;
@@ -93,6 +117,15 @@ option {
 }
 .grid-item-2p {
     padding: 0.5rem;
+}
+.grid-item-1m {
+	 margin: 1rem;
+}
+.grid-item-2m {
+	 margin: 0.5rem;
+}
+.grid-item-4m {
+	 margin: 0.25rem;
 }
 
 .container-fix {
