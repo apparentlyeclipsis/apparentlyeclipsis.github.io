@@ -31,8 +31,8 @@
             </h1>
         </div>
 
-        <div class="text-font-outfit grid-1x6"> <!-- primary grid -->
-            <div class="grid-item-1p round-16 container1-bg" style="height: max-content;"> <!-- navigation -->
+        <div class="text-font-outfit grid-1x6" style="height: 95%"> <!-- primary grid -->
+            <div class="grid-item-1p round-16 container1-bg" style="max-height: 70dvh; overflow-y: scroll; overflow-x: clip;"> <!-- navigation -->
                 <button onclick="navigate(1)" id="button_home" class="text-font-outfit text-bold grid-item-1p button-bg round-8" style="margin-bottom: 0.5rem; width: 100%;">
                     Home
                 </button>
@@ -52,18 +52,17 @@
 
                 <div class="placeholder" style="padding: 1rem; margin-bottom: 0.5rem;">placeholder</div>
                 <div class="placeholder" style="padding: 1rem; margin-bottom: 0.5rem;">placeholder</div>
-                <div class="placeholder" style="padding: 1rem; margin-bottom: 0.5rem;">placeholder</div>
 
                 <button onclick="navigate(8)" id="button_options" class="text-font-outfit grid-item-1p button-bg round-8" style="width: 100%;">
                     Options
                 </button>
             </div>
             <div class="grid-item-1p round-16 container1-bg"> <!-- content , secondary grid -->
-                <div id="container_home"> <!-- home -->
+                <div id="container_home" style="max-height: 70dvh; overflow-y: scroll; overflow-x: clip;"> <!-- home -->
                     Home
                 </div>
 
-                <div id="container_about" class="hidden"> <!-- about -->
+                <div id="container_about" class="hidden" style="max-height: 70dvh; overflow-y: scroll; overflow-x: clip;"> <!-- about -->
                     <h3 class="text-font-calsans text-size-24" style="border-bottom: 2px solid white; width: 70%;">About</h3>
                     <div class="grid-1x4x2">
                         <div class="grid-item-2p">
@@ -91,36 +90,25 @@
                     </div>
                 </div>
 
-                <div id="container_projects" class="hidden"> <!-- projects -->
+                <div id="container_projects" class="hidden" style="max-height: 70dvh; overflow-y: scroll; overflow-x: clip;"> <!-- projects -->
                     <h3 class="text-font-calsans text-size-24" style="border-bottom: 2px solid white; width: 70%;">Projects</h3>
 						  <h4 class="text-font-calsans text-size-18" style="border-bottom: 2px solid white; width: 40%;">Github</h4>
-						  <div class="grid-1xr-6" style="overflow-y: scroll;"> 
-						  		<div class="grid-item-2p grid-item-4m round-16 button-bg"> <!-- template box -->
-									<div style="width: 100%">
-										 <img src="https://avatars.githubusercontent.com/u/191539596?v=4" class="round-8" style="width: 100%; align:center;">
-									</div>
-									<div class="text-centre">
-										Eclipsis
-									</div>
-									<div class="text-size-10 text-grey text-centre">
-										Template box - Avatar replacing normal content.
-									</div>
-								</div>
-							   <div class="grid-item-2p grid-item-4m round-16 button-bg">
+						  <div class="grid-1xr-6" style="padding: 0.25rem; width: 100%;"> 
+							   <a href="https://github.com/apparentlyeclipsis/quickprojects/blob/main/morse-converter/prdesc.md" class="grid-item-2p grid-item-4m round-16 button-bg">
 									<div style="width: 100%">
 										 <img src="assets/icons/morse-converter.png" class="round-8" style="width: 100%; align: center;">
 									</div>
-									<div class="text-centre">
+									<div class="text-centre text-white">
 										Morse-English Converter
 									</div>
 									<div class="text-size-10 text-grey text-centre">
 										Lua-based converter to convert between morse code and characters traditionally used in the English language.
 									</div>
-								</div>
+								</a>
 						  </div>
                 </div>
 
-                <div id="container_socials" class="hidden"> <!-- socials -->
+                <div id="container_socials" class="hidden" style="max-height: 70dvh; overflow-y: scroll; overflow-x: clip;"> <!-- socials -->
                     Socials
                 </div>
 
@@ -140,7 +128,7 @@
                     </div>
                 </div>
 
-                <div id="container_options" class="hidden"> <!-- options -->
+                <div id="container_options" class="hidden" style="max-height: 70dvh; overflow-y: scroll; overflow-x: clip;"> <!-- options -->
                     <h3 class="text-font-calsans text-size-24" style="border-bottom: 2px solid white; width: 70%;">Options</h3>
                     <div class="grid-1x6">
                         <span style="padding: 0.5rem;">Header Font Style</span> <select id="header_font_selector" onchange="changeFont('h')" class="round-8 text-font-calsans text-grey underline" style="width: 30%;">
@@ -157,8 +145,12 @@
             </div>
         </div>
 
-        <div class="text-font-outfit" style="margin-left: 2rem; margin-right: 2rem; padding: 1rem;">
-            this is a very cool footer
+        <div class="text-font-outfit text-grey" style="margin-left: 2rem; margin-right: 2rem; padding: 1rem;">
+            Source Code: 
+			   <a href="https://github.com/apparentlyeclipsis/apparentlyeclipsis.github.io" class="text-white" style="padding-left: 0.5rem; padding-right: 0.5rem;">Github</a>
+			   Profiles:
+			   <a href="https://github.com/apparentlyeclipsis" class="text-white" style="padding-left: 0.5rem; padding-right: 0.5rem;">Github</a>
+			   <a href="https://discordapp.com/users/eclipsis._" class="text-white" style="padding-left: 0.5rem; padding-right: 0.5rem;">Discord</a>
         </div>
     </body>
 </html>
