@@ -32,6 +32,9 @@ ul {
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 }
+a {
+	text-decoration: none;
+}
 
 .text-font-outfit {
     font-family: "Outfit", sans-serif;
@@ -95,13 +98,13 @@ ul {
 }
 .grid-1xr-6 {
 	 display: grid;
-	 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	 grid-template-rows: 275px;
+	 grid-template-columns: repeat(auto-fill, 13dvw);
 	 padding: 1rem;
 }
 .grid-1x6 {
     display: grid;
     grid-template-columns: 1fr 6fr;
+	 grid-template-rows: 100%;
     gap: 1rem;
     padding: 1rem;
 }
