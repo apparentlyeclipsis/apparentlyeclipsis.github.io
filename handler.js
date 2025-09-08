@@ -108,14 +108,14 @@ function changeFont(tag, selection) {
 
         if (newValue == 'Cal Sans') {
             Array.from(document.getElementsByClassName('text-font-dynapuff')).forEach((element) => {
-                if (element.tagName != 'OPTION') {
+                if (element.tagName != 'OPTION' && element.tagName != 'H6') {
                     element.classList.remove('text-font-dynapuff');
                     element.classList.add('text-font-calsans');
                 }
             });
         } else if (newValue == 'DynaPuff') {
             Array.from(document.getElementsByClassName('text-font-calsans')).forEach((element) => {
-                if (element.tagName != 'OPTION') {
+                if (element.tagName != 'OPTION' && element.tagName != 'H6') {
                     element.classList.remove('text-font-calsans');
                     element.classList.add('text-font-dynapuff');
                 }
