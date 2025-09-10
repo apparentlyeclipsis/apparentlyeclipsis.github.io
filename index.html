@@ -2,7 +2,7 @@
 
 <html>
   <head>
-        <!-- version 9 // 9/8/25 -->
+        <!-- version 10 // 9/10/25 -->
         <title>
             Eclipsis Archive
         </title>
@@ -52,11 +52,7 @@
                 <button onclick="navigate(5)" id="button_credits" class="text-left hidden text-font-outfit grid-item-1p button-bg round-8" style="margin-bottom: 0.5rem; width: 100%;">
                     Credits
                 </button>
-
-                <div class="placeholder" style="padding: 1rem; margin-bottom: 0.5rem;">placeholder</div>
-                <div class="placeholder" style="padding: 1rem; margin-bottom: 0.5rem;">placeholder</div>
-
-                <button onclick="navigate(8)" id="button_options" class="text-left text-font-outfit grid-item-1p button-bg round-8" style="width: 100%;">
+                <button onclick="navigate(6)" id="button_options" class="text-left text-font-outfit grid-item-1p button-bg round-8" style="width: 100%;">
                     <img src="assets/icons/pages/settings.png" style="height: 20px; width: 20px; vertical-align: text-top; margin-right: 0.25rem;">
 						  Options
                 </button>
@@ -71,9 +67,10 @@
 
 						  <div class="grid-2x1">
 							  <div>
-								  Welcome to the <b>Eclipsis Archives</b>!
+								  Welcome to the <b>Eclipsis Archives</b>! This is more or less a portfolio, containing my projects, a little bit of information about me, and ways to contact me. <br>
+								  
 							  </div>
-							  <div>
+							  <div class="text-font-calsans text-size-18">
 								  Quick Links
 								  <div class="grid-1x1b">
 									  <button onclick="navigate(2)" class="align-centre text-font-outfit grid-item-1p button-bg round-8" style="height: 15dvh;">
@@ -136,16 +133,35 @@
 										Lua-based converter to convert between morse code and characters traditionally used in the English language.
 									</div>
 								</a>
+							   <a href="https://github.com/apparentlyeclipsis/quickprojects/blob/main/house-building/prdesc.md" target="_blank" class="grid-item-2p grid-item-4m round-16 button-bg">
+									<div style="width: 100%">
+										 <img src="assets/icons/projects/house-building.png" class="round-8" style="width: 100%; align: center;">
+									</div>
+									<div class="text-centre text-white">
+										House Building Simulator
+									</div>
+									<div class="text-size-10 text-grey text-centre">
+										An extremely heavily simplified text-based house building simulation written in Python.
+									</div>
+								</a>
 						  </div>
                 </div>
 
                 <div id="container_socials" class="hidden" style="max-height: 70dvh; overflow-y: scroll; overflow-x: clip;  scrollbar-width: none;"> <!-- socials -->
-                    Socials
+                    <h3 class="text-font-calsans text-size-24" style="border-bottom: 2px solid white; width: 70%;">Socials</h3>
+						  <p>Ways to contact me!</p>
+						  <!-- <div class="grid-1xr-6b" style="padding: 0.25rem; width: 100%">
+								  <a target="_blank" class="grid-item-2p grid-item-4m round-16 button-bg text-centre" style="height: 13dvh;">
+									  <img src="assets/icons/pages/home.png" style="height: 4rem; width: 4rem; margin-right: 0.25rem;">
+									  <br>a
+								  </a>
+							  	  
+						  </div> -->
                 </div>
 
                 <div id="container_credits" class="hidden"> <!-- credits -->
                     <h3 class="text-font-calsans text-size-24" style="border-bottom: 2px solid white; width: 70%;">Credits</h3>
-                    <div class="grid-1x4x2">
+                    <!-- <div class="grid-1x4x2">
                         <div class="grid-item-2p">
                             <img src="https://rebytre.github.io/Icon.jpg" class="round-16" style="width: 100%;">
                         </div>
@@ -156,10 +172,10 @@
                         <div class="grid-item-1p text-grey text-size-10" style="margin-top: 2.5rem;">
                             Rebytre also has a similar portfolio, by the way. You can find it <a href="https://rebytre.github.io/" class="text-white">here</a>.
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
-                <div id="container_options" class="hidden" style="max-height: 70dvh; overflow-y: scroll; overflow-x: clip;"> <!-- options -->
+                <div id="container_options" class="hidden" style="height: 70dvh; max-height: 70dvh; overflow-y: scroll; overflow-x: clip; scrollbar-width: none;"> <!-- options -->
                     <h3 class="text-font-calsans text-size-24" style="border-bottom: 2px solid white; width: 70%;">Options</h3>
                     <div class="grid-1x6">
                         <span style="padding: 0.5rem;">Header Font Style</span> <select id="header_font_selector" onchange="changeFont('h')" class="round-8 text-font-calsans text-grey underline" style="width: 30%;">
@@ -172,6 +188,7 @@
                             <option class="text-font-outfit">Forest</option>
                         </select>
                     </div>
+						  <br><p class="text-grey grid-item-1p">Note: Options do not save between page refresh.</p>
                 </div>
             </div>
         </div>
