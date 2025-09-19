@@ -4,8 +4,10 @@ function navigate(page) {
 	
      for (let button of buttons) {
 		 button.classList.remove('text-bold');
+         button.classList.remove('button-bg');
 	 }
 	 buttons[page-1].classList.add('text-bold');
+     buttons[page-1].classList.add('button-bg2');
 
 	 for (let container of containers) {
 		 container.classList.add('hidden');
